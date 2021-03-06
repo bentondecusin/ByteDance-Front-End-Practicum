@@ -1,0 +1,19 @@
+.search-container input{
+	background: rgb(236, 255, 255)
+}
+
+.search-container {
+	background: rgb(255, 217, 217)
+}
+
+.select-fruit-container select{
+	background: rgb(255, 217, 217)
+}
+
+.select-fruit-container {
+	background: rgb(236, 255, 255)
+}
+
+body {
+	background: rgb(245, 245, 245)
+}
