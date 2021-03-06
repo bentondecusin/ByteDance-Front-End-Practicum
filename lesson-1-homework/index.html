@@ -3,26 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>HW 1</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-		<div class="search-container">
-			<a>Fruits: </a>
-			<input type="text" name="search" placeholder="Search..">
-			<button>Submit</button>
-		</div>
 		<div class="select-fruit-container">
 			<a>Fruits:</a>
-			<select class="select-fruit" style="width:200px;">
-				<option value="0"></option>
-				<option value="1">Banana</option>
-				<option value="2">Cherry</option>
-				<option value="3">Apple</option>
-				<option value="4">Strawberry</option>
-				<option value="5">Lemon</option>
-				<option value="0">Orange</option>
-			</select>
+			<input list="fruits" >
+				<datalist id="fruits">
+					<option value="Banana"></option>
+					<option value="Cherry"></option>
+					<option value="Apple"></option>
+					<option value="Strawberry"></option>
+					<option value="Lemon"></option>
+					<option value="Orange"></option>
+				</datalist>
+			</input>
 			<button>Submit</button>
 		</div>
     <script src="script.js"></script>

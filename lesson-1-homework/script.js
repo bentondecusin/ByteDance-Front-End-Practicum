@@ -1,1 +1,1 @@
-//Yeet No JS 
+//Yeet No js
