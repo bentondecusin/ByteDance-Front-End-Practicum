@@ -34,6 +34,7 @@ body {
   width: 8%;
   height: 600px;
   padding-right: 1%;
+  padding-left: 10%;
   float: left;
 }
 
@@ -51,12 +52,11 @@ body {
 img#toutiao-icon {
   padding-top: 10px;
   padding-bottom: 5px;
-
   width: 100%;
 }
 
 .center {
-  width: 58%;
+  width: 50%;
   height: 100%;
   padding-left: 1%;
   padding-right: 1%;
@@ -97,7 +97,9 @@ img#toutiao-icon {
   padding: 5px 0;
 }
 .right {
-  width: 30%;
+  width: 15%;
+  padding-right: 10%;
+  padding-top: 5px;
   float: right;
   content: center;
 }
