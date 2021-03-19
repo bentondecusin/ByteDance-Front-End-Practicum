@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.sidebar {
+  height: 1000px;
+  width: 350px;
+  padding: 10px;
+  text-align: left;
+}
+
+#left-sidebar {
+  position: absolute;
+  left: 0;
+  display: block;
+  background: lightcoral;
+  float: left;
+}
+
+#right-sidebar {
+  position: absolute;
+  right: 0;
+  display: block;
+  background: lightcyan;
+  float: right;
+}
+
+#main-content {
+  display: block;
+
+  margin: 10px 380px 10px 380px;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+}
