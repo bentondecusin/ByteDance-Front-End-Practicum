@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.sidebar {
+  height: 100%;
+  width: 360px;
+  padding: 10px;
+  text-align: left;
+}
+
+#left-sidebar {
+  display: block;
+  background: lightcoral;
+  float: left;
+}
+
+#right-sidebar {
+  display: block;
+  background: lightcyan;
+  float: right;
+}
+
+#main-content {
+  display: block;
+  padding: 10px 400px 10px 400px;
+}
+
+.container {
+  width: 1200px;
+}
