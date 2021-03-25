@@ -10,7 +10,7 @@ function appendInput(input){
   else {
     var newTask = document.createElement("li")
     newTask.innerHTML = `
-      <span class="delete">x</span><input type="checkbox">${input.value}`
+      <button class="delete">x</button><input type="checkbox">${input.value}`
     newTask.querySelector("button").
       addEventListener("click", evt => {
         document.querySelector("ul").removeChild(evt.target.parentNode)
