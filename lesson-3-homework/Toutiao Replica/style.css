@@ -1,0 +1,118 @@
+* {
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei,
+    WenQuanYi Micro Hei, Helvetica Neue, Arial, sans-serif;
+  align-content: center;
+}
+
+header#top-bar div {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-right: 1px solid rgb(10, 2, 2);
+}
+
+header#top-bar div:hover {
+  background: gray;
+}
+
+header {
+  background: #222;
+  height: 35px;
+  width: 100%;
+  color: aliceblue;
+  font-size: 12;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.left {
+  width: 8%;
+  height: 600px;
+  padding-right: 1%;
+  padding-left: 10%;
+  float: left;
+}
+
+.left li:hover {
+  background: #ed4040;
+}
+.left li {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+img#toutiao-icon {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.center {
+  width: 50%;
+  height: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  float: left;
+}
+.notif {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background: #ed4040;
+}
+.feed-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.feed-container:hover {
+  border-bottom: 1px solid gainsboro;
+  background: gainsboro;
+}
+.footer-bar {
+  font-size: small;
+  color: gray;
+}
+
+.feed-container img {
+  height: 102px;
+  display: block;
+  float: left;
+}
+
+.feed-container .img + div {
+  padding: 5px 0;
+}
+.right {
+  width: 15%;
+  padding-right: 10%;
+  padding-top: 5px;
+  float: right;
+  content: center;
+}
+.video-tag {
+  color: red;
+  border: 1px solid red;
+}
+.bs-tag {
+  color: blue;
+  border: 1px solid blue;
+}
+.right .login {
+  margin: 10px;
+  align-content: stretch;
+}
