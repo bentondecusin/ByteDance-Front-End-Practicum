@@ -44,4 +44,4 @@ for (i of document.querySelector(".feed-list").querySelectorAll("div.no-mode, di
     //     })
     //     break
     // }
-}
+
