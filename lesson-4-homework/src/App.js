@@ -14,9 +14,13 @@ import reactDom from 'react-dom';
 function Buttons(){
   const images = [c0, c1, c2, c3, c4, c5, c6, c7]
   const [imgIdx, setImageIdx] = useState(0);
-  return (<button onclick={() => setImageIdx((imgIdx - 1 + 8) % 8)}>&#10094;</button>,
-  <button onclick={() => setImageIdx((imgIdx + 1) % 8)}> &#10095; {imgIdx}</button>,
-  <img src={images[imgIdx]} />
+  return (
+    <>
+      <button onclick={() => setImageIdx((imgIdx - 1 + 8) % 8)}> &#10094;{imgIdx}</button>,
+      <button onclick={() => setImageIdx((imgIdx + 1) % 8)}> &#10095; {imgIdx}</button>,
+      <div> <img src={images[imgIdx]} /> </div>
+    </>
+
   );
 }
 
