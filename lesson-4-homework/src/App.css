@@ -8,8 +8,13 @@
 }
 
 img {
-  width: 80%;
-  height: width * 4 / 3;
+  float: none;
+  width: 500px;
+  height: width * 16 / 9;
+}
+
+div {
+  position: absolute;
 }
 
 @media (prefers-reduced-motion: no-preference) {
