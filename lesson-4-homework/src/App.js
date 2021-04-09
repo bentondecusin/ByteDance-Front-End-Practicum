@@ -16,8 +16,8 @@ function Buttons(){
   const [imgIdx, setImageIdx] = useState(0);
   return (
     <>
-      <button onclick={() => setImageIdx((imgIdx - 1 + 8) % 8)}> &#10094;{imgIdx}</button>,
-      <button onclick={() => setImageIdx((imgIdx + 1) % 8)}> &#10095; {imgIdx}</button>,
+      <button onClick={() => setImageIdx(imgIdx => ((imgIdx - 1 + 8) % 8))}> &#10094;{imgIdx}</button>,
+      <button onClick={() => setImageIdx(imgIdx => ((imgIdx + 1) % 8))}> &#10095; {imgIdx}</button>,
       <div> <img src={images[imgIdx]} /> </div>
     </>
 
