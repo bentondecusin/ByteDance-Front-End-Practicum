@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import c0 from './images/cornell0.jpeg';
+import c1 from './images/cornell1.jpeg';
+import c2 from './images/cornell2.jpeg';
+import c3 from './images/cornell3.jpeg';
+import c4 from './images/cornell4.jpeg';
+import c5 from './images/cornell5.jpeg';
+import c6 from './images/cornell6.jpeg';
+import c7 from './images/cornell7.jpeg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import './App.css';
+import React, { useState, useEffect } from 'react';
+import reactDom from 'react-dom';
+
+function Buttons(){
+  const images = [c0, c1, c2, c3, c4, c5, c6, c7]
+  const [imgIdx, setImageIdx] = useState(0);
+  return (<button onclick={() => setImageIdx((imgIdx - 1 + 8) % 8)}>&#10094;</button>,
+  <button onclick={() => setImageIdx((imgIdx + 1) % 8)}> &#10095; {imgIdx}</button>,
+  <img src={images[imgIdx]} />
   );
 }
 
-export default App;
+
+export default Buttons;
