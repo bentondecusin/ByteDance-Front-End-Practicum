@@ -8,9 +8,9 @@
 }
 
 img {
-  float: none;
-  width: 500px;
-  height: width * 16 / 9;
+  float: center;
+  width: 600px;
+  height: width * 9 / 16;
 }
 
 div {
