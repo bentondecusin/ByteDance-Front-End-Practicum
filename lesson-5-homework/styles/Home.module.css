@@ -165,7 +165,14 @@
 .logo {
   height: 1em;
 }
+.lab {
+  color: red;
+  border: 1px solid red;
+}
 
+.img {
+  margin: 5px 2px 5px 2px;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

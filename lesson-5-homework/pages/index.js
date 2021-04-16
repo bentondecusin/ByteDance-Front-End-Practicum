@@ -33,8 +33,11 @@ export default function Home() {
             
             <div className={styles.feed_container}>
               <div className={styles.title} href={i.title_link}> {i.title}</div>
+              <div className={styles.img_list}>
+                {i.imgs.map((j) => {return (<img className={styles.img} src={j} />);})} 
+              </div>
               <div className={styles.footer_bar}>
-                {i.footbar}
+                <a className={styles.lab}>{i.lab}</a> {i.src} {i.cmt} {i.time}
               </div>
             
             </div>
