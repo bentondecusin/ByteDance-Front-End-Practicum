@@ -1,19 +1,56 @@
 .container {
+  white-space: pre-wrap;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+}
+
+.feed_container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.feed_container:hover {
+  border-bottom: 1px solid gainsboro;
+  background: gainsboro;
+}
+
+.top_bar {
+  height: 44px;
+  background: #d43d3d;
+  text-align: center;
+  color: #fafafa;
+  font-size: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+.top_menu {
+  height: 44px;
+  background: #ddd;
+  text-align: left;
+  color: #505050;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .footer {
@@ -23,6 +60,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-tag {
+  color: red;
+  border: 1px solid red;
+}
+.bs-tag {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.footer_bar {
+  font-size: small;
+  color: gray;
 }
 
 .footer img {
@@ -49,12 +100,13 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: medium;
+  align-content: left;
 }
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
