@@ -24,7 +24,7 @@ export default function Home() {
       <span>今日头条</span>
     </div>
     <div className={styles.top_menu}>
-      {menu.map((i) => {return <span> {i} </span>})}
+      {menu.map((i) => {return <span href="https://m.toutiao.com/?W2atIF=1" className={styles.top_menu_item}> {i} </span>})}
     </div>
     <div className={styles.container}>
       <main className={styles.main}>
