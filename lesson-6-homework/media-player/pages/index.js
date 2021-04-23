@@ -43,7 +43,16 @@ function Play(){
         />
   </div>)
 }
-
+function Cover(){
+  return(<div className={styles.cover}>
+    <img className={styles.large_album_img} src="https://avatars.githubusercontent.com/u/28986219?v=4 "></img>
+    <div>
+      <h1>Who Ask (feat. Nobody)</h1>
+      <h3>2021 - BCYL</h3>
+    </div>
+    
+  </div>)
+}
 function PlayBox(){
   return (<div className={styles.playbox}>
     <img className={styles.album_img} src="https://avatars.githubusercontent.com/u/28986219?v=4 "></img>
@@ -71,7 +80,14 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <Sidebar></Sidebar>
+        <main className={styles.content}>
+          <Cover></Cover>
 
+          <ul className={styles.playlist}>
+           
+          </ul>
+        </main>
+        
       </main>
       <PlayBox></PlayBox>
 
