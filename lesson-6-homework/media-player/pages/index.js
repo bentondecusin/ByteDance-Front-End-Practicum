@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { ReactUpload } from 'react-upload-box'
+import React, { useState } from 'react'
 
 function Sidebar(){
   return (<div className={styles.sidebar}>
@@ -10,12 +12,38 @@ function Sidebar(){
   </div>)
 }
 
+function Play(){
+  const [percentage, setPercentage] = useState(0)
+  const [pause, setPause] = useState(false)
+  const uploadFile = async () => {
+    setPercentage(newPercentage)
+  }
+  const handlePause = async () => {
+    setPause(true)
+  }
+  const handleStart = async () => {
+    setPause(false)
+  }
+  return (<div className={styles.play}>
+    <ReactUpload
+          mode="light"
+          fileName="a"
+          percentage={percentage}
+          paused={pause}
+          disabled={percentage === 100}
+          completed={percentage === 100}
+          onPause={handlePause}
+          onStart={handleStart}
+        />
+  </div>)
+}
+
 function PlayBox(){
   return (<div className={styles.playbox}>
-    <img className={styles.album}></img>
-    <button>🏠</button>
-    <button>🎵</button>
-    <button>❤️</button>
+    <img className={styles.album_img} src="https://avatars.githubusercontent.com/u/28986219?v=4 "></img>
+    <audio controls autoplay className={styles.play}> 
+    Your browser does not support the audio element.
+    </audio>
   </div>)
 }
 export default function Home() {
