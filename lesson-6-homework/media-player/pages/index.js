@@ -27,8 +27,10 @@ function Play(){
     setPause(false)
     setInterval(function(){ 
       console.log(percentage);
-      setPercentage((s) => s + 1);
-     }, 1000)
+      setPercentage((s) => 
+        s != 100 ? s + 1 : 0
+      );
+     }, 200)
   }
   return (<div className={styles.play}>
     <ReactUpload
@@ -47,7 +49,7 @@ function Cover(){
   return(<div className={styles.cover}>
     <img className={styles.large_album_img} src="https://avatars.githubusercontent.com/u/28986219?v=4 "></img>
     <div>
-      <h1>Who Ask (feat. Nobody)</h1>
+      <h1>Sad Songs</h1>
       <h3>2021 - BCYL</h3>
     </div>
     
@@ -84,7 +86,10 @@ export default function Home() {
           <Cover></Cover>
 
           <ul className={styles.playlist}>
-           
+            <h3 className={styles.sg}>Who Ask (feat. Nobody)</h3>
+            <h3 className={styles.sg}>I Ask (feat. Benton)</h3>
+            <h3 className={styles.sg}>a</h3>
+
           </ul>
         </main>
         

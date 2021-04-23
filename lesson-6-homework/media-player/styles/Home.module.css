@@ -79,6 +79,11 @@
 }
 
 .playlist {
+}
+
+.sg {
+  margin-top: 2px;
+  padding: 10px 0 10px 0;
   background-color: azure;
 }
 .large_album_img {
