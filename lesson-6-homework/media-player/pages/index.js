@@ -14,7 +14,9 @@ function Sidebar(){
 
 function Play(){
   const [percentage, setPercentage] = useState(0)
-  const [pause, setPause] = useState(false)
+  const [pause, setPause] = useState(true)
+  const onClick = () => {
+  }
   const uploadFile = async () => {
     setPercentage(newPercentage)
   }
@@ -23,11 +25,15 @@ function Play(){
   }
   const handleStart = async () => {
     setPause(false)
+    setInterval(function(){ 
+      console.log(percentage);
+      setPercentage((s) => s + 1);
+     }, 1000)
   }
   return (<div className={styles.play}>
     <ReactUpload
           mode="light"
-          fileName="a"
+          fileName="Who Asks (feat. Nobody) "
           percentage={percentage}
           paused={pause}
           disabled={percentage === 100}
@@ -41,9 +47,9 @@ function Play(){
 function PlayBox(){
   return (<div className={styles.playbox}>
     <img className={styles.album_img} src="https://avatars.githubusercontent.com/u/28986219?v=4 "></img>
-    <audio controls autoplay className={styles.play}> 
+    <Play controls autoplay className={styles.play}> 
     Your browser does not support the audio element.
-    </audio>
+    </Play>
   </div>)
 }
 export default function Home() {
